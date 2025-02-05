@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    background: navy;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.container {
+    max-width: 90%;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    flex-grow: 1;
+}
+
+.content h2, .content h3 {
+    color: navy;
+}
+
+.footer {
+    text-align: center;
+    padding: 10px;
+    background: navy;
+    color: white;
+    width: 100%;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: navy;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background: #00008b;
+}
+
+/* Contenedor de licencias con flexbox */
+.licencias-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Cajas con identificadores individuales */
+#caja1, #caja2, #caja3 {
+    border: 2px solid #00008b;
+    float: left;
+    overflow: visible;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 32%;
+    box-sizing: border-box;
+}
+
+/* Media query para que las cajas se adapten en pantallas pequeñas */
+@media (max-width: 768px) {
+    .licencias-container {
+        flex-direction: column;
+    }
+    #caja1, #caja2, #caja3 {
+        max-width: 100%;
+    }
+}
+
+/* Estilos para las tablas */
+.table-container {
+    margin-top: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: navy;
+    color: white;
+}
